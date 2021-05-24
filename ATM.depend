@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1620965497 source:d:\code block\atm\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<iomanip>
+	<conio.h>
+	<sstream>
+	<ctime>
+	"struct.h"
+	"ad_min.h"
+	"main_pro.h"
+	"check_id.h"
+	"text.h"
+
+1620460590 d:\code block\atm\money.h
+
+1621858426 d:\code block\atm\ad_min.h
+
+1621857049 d:\code block\atm\struct.h
+
+1621858357 d:\code block\atm\main_pro.h
+
+1621857241 d:\code block\atm\check_id.h
+
+1621858311 d:\code block\atm\text.h
+
+1620965497 source:d:\code block\atm - copy\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<iomanip>
+	<conio.h>
+	<sstream>
+	<ctime>
+	"struct.h"
+	"ad_min.h"
+	"main_pro.h"
+	"check_id.h"
+	"text.h"
+
+1621857049 d:\code block\atm - copy\struct.h
+
+1621858426 d:\code block\atm - copy\ad_min.h
+
+1621858357 d:\code block\atm - copy\main_pro.h
+
+1621857241 d:\code block\atm - copy\check_id.h
+
+1621858311 d:\code block\atm - copy\text.h
+

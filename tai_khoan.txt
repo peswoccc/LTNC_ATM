@@ -1,0 +1,16 @@
+15
+dts14102002 Dts14102002 1330000 0
+thanhsonvip1410 14102002 529000 0
+dts141020021 Dts14102002 20000 0
+abcd efgh 1520000 0
+son_dt_uet 14102002 600000 0
+son_dt_uet2 14102002 400000 0
+defg abcd 700000 0
+abcde efghi 40000 0
+thanhsonvip141020022 vjppro 550000 0
+thanhsonvip141020021 vjppro 1450000 0
+waowao yeahyeah 2110000 0
+waowao1 yeahyeah1 5340000 0
+waowao3 yeahyeah3 100000 0
+son_doan son_doan 900000 0
+thanh_son thanh_son 0 0

@@ -1,0 +1,2 @@
+waowao1               -660000 VND           chuyen tien toi waowao                  24/05/2021 20:57
+waowao                +660000 VND           nhan tien tu waowao1                    24/05/2021 20:57
