@@ -49,3 +49,27 @@
 
 1621858311 d:\code block\atm - copy\text.h
 
+1621866613 source:d:\code block\atm_doan_thanh_son\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<iomanip>
+	<conio.h>
+	<sstream>
+	<ctime>
+	"struct.h"
+	"ad_min.h"
+	"main_pro.h"
+	"check_id.h"
+	"text.h"
+
+1621857049 d:\code block\atm_doan_thanh_son\struct.h
+
+1621873586 d:\code block\atm_doan_thanh_son\ad_min.h
+
+1621868531 d:\code block\atm_doan_thanh_son\main_pro.h
+
+1621868091 d:\code block\atm_doan_thanh_son\check_id.h
+
+1621872539 d:\code block\atm_doan_thanh_son\text.h
+

@@ -81,31 +81,42 @@ void three_rut_tien(tai_khoan &tk)
     }
     int r10, r20, r50, r100, r200, r500;
     three_rut_tien_pick(r10, r20, r50, r100, r200, r500, x);
-    system("cls");
-    cout << text[40][language] << x <<" VND\n\n";
-    cout << text[41][language];
-    cout << setw(20) <<  left << text[21][language] << text[22][1] << endl;
-    if (r10 != 0) cout << setw(20) <<  left << "10000" << r10 << endl;
-    if (r20 != 0) cout << setw(20) <<  left << "20000" << r20 << endl;
-    if (r50 != 0) cout << setw(20) <<  left << "50000" << r50 << endl;
-    if (r100 != 0) cout << setw(20) <<  left << "100000" << r100 << endl;
-    if (r200 != 0) cout << setw(20) <<  left << "200000" << r200 << endl;
-    if (r500 != 0) cout << setw(20) <<  left << "500000" << r500 << endl;
-    tk.id_money -= x;
-    save_tk(tk);
     int k10, k20, k50, k100, k200, k500;
     file_to_money(k10, k20, k50, k100, k200, k500);
-    money_to_file(k10-r10, k20-r20, k50-r50, k100-r100, k200-r200, k500-r500);
+    if (k10 < r10 || k20 < r20 || k50 < r50 || k100 < r100 || k200 < r200 || k500 < r500)
+    {
+        system("cls");
+        cout << text[63][language];
+        getch();
+        system("cls");
+    }
+    else
+    {
+        system("cls");
+        cout << text[40][language] << x <<" VND\n\n";
+        cout << text[41][language];
+        cout << setw(20) <<  left << text[21][language] << text[22][1] << endl;
+        if (r10 != 0) cout << setw(20) <<  left << "10000" << r10 << endl;
+        if (r20 != 0) cout << setw(20) <<  left << "20000" << r20 << endl;
+        if (r50 != 0) cout << setw(20) <<  left << "50000" << r50 << endl;
+        if (r100 != 0) cout << setw(20) <<  left << "100000" << r100 << endl;
+        if (r200 != 0) cout << setw(20) <<  left << "200000" << r200 << endl;
+        if (r500 != 0) cout << setw(20) <<  left << "500000" << r500 << endl;
+        tk.id_money -= x;
+        save_tk(tk);
+        money_to_file(k10-r10, k20-r20, k50-r50, k100-r100, k200-r200, k500-r500);
 
-    //tieng viet
-    stringstream ss;
-    ss << setw(21) << left << tk.id << " -" << setw(21) << left << to_string(x) + " VND" << setw(40) << left << "rut tien tai ATM" << date_time_now();
-    add_history1(ss);
+        //tieng viet
+        stringstream ss;
+        ss << setw(21) << left << tk.id << " -" << setw(21) << left << to_string(x) + " VND" << setw(40) << left << "rut tien tai ATM" << date_time_now();
+        add_history1(ss);
 
-    //tieng anh
-    stringstream ss2;
-    ss2 << setw(21) << left << tk.id << " -" << setw(21) << left << to_string(x) + " VND" << setw(40) << left << "withdraw money at ATM" << date_time_now();
-    add_history2(ss2);
+        //tieng anh
+        stringstream ss2;
+        ss2 << setw(21) << left << tk.id << " -" << setw(21) << left << to_string(x) + " VND" << setw(40) << left << "withdraw money at ATM" << date_time_now();
+        add_history2(ss2);
+
+    }
 }
 
 void four_chuyen_tien(tai_khoan &tk)

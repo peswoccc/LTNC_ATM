@@ -13,8 +13,8 @@ text[4][2] = "ID";
 text[5][1] = "Mat khau";
 text[5][2] = "Password";
 
-text[6][1] = "So du";
-text[6][2] = "Balance";
+text[6][1] = "So du (VND)";
+text[6][2] = "Balance (VND)";
 
 text[7][1] = "Trang thai";
 text[7][2] = "Status";
@@ -183,3 +183,6 @@ text[61][2] = "1 - Log in   2 - End\n";
 
 text[62][1] = "\nVui long nhap dung theo chi dan!\n";
 text[62][2] = "\nPlease follow the instruction!\n";
+
+text[63][1] = "ATM khong con du tien. Vui long lien he admin!\nNhan 1 phim bat ki de ket thuc.";
+text[63][2] = "ATM does not have enough money. Please contact admin!\nPress any key to continue.";

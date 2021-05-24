@@ -14,18 +14,28 @@ bool id_exist(string id, vector<tai_khoan> tk)
     return 0;
 }
 
+bool char_valid(char x)
+{
+    if (x == '_') return true;
+    if (x >= 'a' && x <= 'z') return true;
+    if (x >= 'A' && x <= 'Z') return true;
+    if (x >= '0' && x <= '9') return true;
+    return false;
+}
+
 bool id_valid(string id)
 {
     if (id.size() > 20) return 0;
-    bool a = 0;
+    //bool a = 0;
     for (int i = 0; i < id.size(); i++)
     {
-        a = 0;
-        if (id[i] == '_') a = 1;
-        if (id[i] >= 'a' && id[i] <= 'z') a = 1;
-        if (id[i] >= 'A' && id[i] <= 'Z') a = 1;
-        if (id[i] >= '0' && id[i] <= '9') a = 1;
-        if (!a) return 0;
+//        a = 0;
+//        if (id[i] == '_') a = 1;
+//        if (id[i] >= 'a' && x <= 'z') a = 1;
+//        if (id[i] >= 'A' && x <= 'Z') a = 1;
+//        if (x >= '0' && x <= '9') a = 1;
+//        if (!a) return 0;
+        if (!char_valid(id[i])) return 0;
     }
     return 1;
 }
@@ -38,13 +48,13 @@ void twoad_themtk()
     while (!id_valid(tam.id))
     {
         system("cls");
-        cout << text[15][language] << text[11][language];
+        cout << text[11][language];
         cin >> tam.id;
     }
     while (id_exist(tam.id, file_to_tk()))
     {
         system("cls");
-        cout << text[15][language] << text[12][language];
+        cout << text[12][language];
         cin >> tam.id;
     }
     system("cls");
@@ -53,7 +63,7 @@ void twoad_themtk()
     while (!id_valid(tam.pass))
     {
         system("cls");
-        cout << text[17][language] << tam.id << endl << text[15][language] << text[14][language];
+        cout << text[17][language] << tam.id << endl << text[14][language];
         cin >> tam.pass;
     }
     tam.id_money = 0;

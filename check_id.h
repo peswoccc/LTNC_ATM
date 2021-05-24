@@ -15,11 +15,12 @@ void thong_bao_tk_bi_khoa()
 {
     cout << text[56][language];
     getch();
-    thanks();
+    system("cls");
 }
 
 void check_id_admin(tai_khoan &tk, vector<tai_khoan> &v)
 {
+    v = file_to_tk();
     cout << text[57][language];
     cin >> tk.pass;
     while (tk.pass != "14102002")
@@ -34,6 +35,7 @@ void check_id_admin(tai_khoan &tk, vector<tai_khoan> &v)
 
 void check_id(tai_khoan &tk, vector <tai_khoan> &v)
 {
+    v = file_to_tk();
     cout << text[59][language];
     cin >> tk.id;
     if (tk.id == "admin")
